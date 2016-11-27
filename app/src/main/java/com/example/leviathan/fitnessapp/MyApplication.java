@@ -6,5 +6,5 @@ import java.util.ArrayList;
 
 public class MyApplication  extends Application {
 
-    ArrayList<WorkOutActivity> data;
+    ArrayList<WorkOutActivity> data = new ArrayList<>();
 }

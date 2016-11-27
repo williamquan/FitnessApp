@@ -10,37 +10,48 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.leviathan.fitnessapp.MainActivity">
 
-    <TextView
-
-        android:text="TextView"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/saveButton"
-        android:layout_alignRight="@+id/saveButton"
-        android:layout_alignEnd="@+id/saveButton"
-        android:id="@+id/textView" />
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+             />
 
-    <Button android:text="Save"
-        android:id="@+id/saveButton"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:focusable="false"
-        android:layout_marginTop="87dp"
-        android:layout_below="@+id/tab_featured"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:orientation="horizontal"
+        >
+        <Button android:text="Save"
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_below="@+id/tab_featured"
+            />
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+    </LinearLayout>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        <ListView
+            android:id="@+id/listId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
 
 
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/tab_featured"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
